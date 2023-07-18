@@ -1,10 +1,5 @@
-config:
-  feed:
-    priceRateLimit: 20
-    contentRateLimit: 20
-    reviewRateLimit: 10
-    acceptancePercentage: 98
-    executor:
-      threadSize: 200
-      name: defaultapp1
-    tspIds: 24
+# Common properties for app1 (used by all profiles)
+app1.common-property: common-value
+
+# Other properties specific to app1
+app1.app-property: app1-value

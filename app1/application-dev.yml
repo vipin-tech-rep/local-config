@@ -1,0 +1,2 @@
+# Profile-specific properties for app1 in 'dev' environment
+app1.profile-property: dev-value
