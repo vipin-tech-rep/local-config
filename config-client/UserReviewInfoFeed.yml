@@ -1,0 +1,49 @@
+userReviewInfoFeed:
+  hotelIdsPartitionSize: 200
+  filesGenerationConfig:
+    - partner: Google
+      format: xml
+      freemarkerTemplate: UserReviewsXml.ftlx
+      hotelsPerFile: 1000000000
+      brandsConfig:
+        expedia:
+          fileName: hotels/expedia-local-reviews-hotels%s.xml.zip
+          acceptancePercentage: 99
+        hotels:
+          fileName: hotels/hotels-local-reviews-hotels%s.xml.zip
+          acceptancePercentage: 99
+        ebookers:
+          fileName: hotels/ebookers-local-reviews-hotels%s.xml.zip
+          acceptancePercentage: 99
+        travelocity:
+          fileName: hotels/travelocity-local-reviews-hotels%s.xml.zip
+          acceptancePercentage: 99
+        wotif:
+          fileName: hotels/wotif-local-reviews-hotels%s.xml.zip
+          acceptancePercentage: 99
+        orbitz:
+          fileName: hotels/orbitz-local-reviews-hotels%s.xml.zip
+          acceptancePercentage: 99
+    - partner: Common
+      format: jsonl
+      includeBookableOnly: true
+      includeReviewSummary: true
+      includeReviewSummaryForAllBrands: true
+      includeReviewContentForAllBrands: true
+      freemarkerTemplate: CommonGuestReviewJsonl.ftlx
+      hotelsPerFile: 1000000
+      tspIds: 24,83,103
+      brandsConfig:
+        all:
+          hashFileName: hotels/common/master/meta/hash_%s.csv
+          fileName: hotels/common/reviews/expedia-lodging-guestreviews%s-all.jsonl.zip
+          acceptancePercentage: 95
+          key: DD0CFD5B-4CE6-474C-934C-C2ABC250D72B
+          filter:
+            filterSourceDirectory: hotels/common/reviews/source/expedia-lodging-guestreviews%s
+            sourceFileName: hotels/common/reviews/expedia-lodging-guestreviews%s-all.jsonl.zip
+            fileName: hotels/common/reviews/filtered/expedia-lodging-guestreviews%s.jsonl.zip
+          fileMetadata:
+            type: GUEST_REVIEW
+            file-content-type: Reviews
+            is-public-resource: true

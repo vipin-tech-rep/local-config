@@ -1,0 +1,13 @@
+vendorLogoInfoFeed:
+  filesGenerationConfig:
+    - partner: Common
+      format: json
+      freemarkerTemplate: CommonVendorlogoJson.ftl
+      hotelsPerFile: 1000000000
+      brandsConfig:
+        all:
+          fileName: VendorLogo/vendorlogo.json
+          acceptancePercentage: 90
+          fileMetadata:
+            type: VENDORLOGO
+            is-public-resource: true

@@ -1,0 +1,27 @@
+config:
+  feed:
+    staticInfoFeed:
+      hotelIdsPartitionSize: 250
+      filesGenerationConfig:
+        - partner: Facebook
+          availablePricingWindow: 20
+          brandsConfig:
+            expedia:
+              propertyCountAcceptancePercentage: 60
+    userReviewInfoFeed:
+      hotelIdsPartitionSize: 100
+      filesGenerationConfig:
+        - partner: Google
+          brandsConfig:
+            expedia:
+              acceptancePercentage: 98
+            hotels:
+              acceptancePercentage: 98
+            ebookers:
+              acceptancePercentage: 98
+            travelocity:
+              acceptancePercentage: 98
+            wotif:
+              acceptancePercentage: 98
+            orbitz:
+              acceptancePercentage: 98

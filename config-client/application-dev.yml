@@ -1,2 +1,0 @@
-# Profile-specific properties for config-client in 'dev' environment
-config-client.profile-property: dev-value

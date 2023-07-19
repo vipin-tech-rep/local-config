@@ -1,0 +1,15 @@
+hotelIdAncestorsInfoFeed:
+  url: https://geo-feeds.eglocal.exp-prod.net/api/v1/download?group=specific&name=hotel-ancestors&cid=ews-lpp&apk=ews-feed-service
+  filesGenerationConfig:
+    - partner: Common
+      format: csv
+      freemarkerTemplate: CommonHotelIdAncestorsCsv.ftl
+      hotelsPerFile: 1000000
+      brandsConfig:
+        all:
+          fileName: hotels/common/hotelIdAncestors/expedia-hotel-id-ancestors%s.csv.zip
+          acceptancePercentage: 95
+          fileMetadata:
+            type: HOTEL_TO_REGION_HIERARCHY
+            file-content-type: HotelToRegionHierarchy
+            is-public-resource: true

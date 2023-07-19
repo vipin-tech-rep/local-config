@@ -1,5 +1,0 @@
-# Common properties for app1 (used by all profiles)
-app1.common-property: common-value
-
-# Other properties specific to config-client
-config-client.app-property: config-client-value

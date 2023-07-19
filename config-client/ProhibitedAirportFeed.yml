@@ -1,0 +1,13 @@
+prohibitedAirportFeed:
+  filesGenerationConfig:
+    - partner: Common
+      format: jsonl
+      freemarkerTemplate: ProhibitedAirportsJsonl.ftl
+      brandsConfig:
+        all:
+          fileName: flights/common/prohibitedairports.jsonl.zip
+          acceptancePercentage: 95
+          fileMetadata:
+            type: PROHIBITED_AIRPORTS
+            file-content-type: ProhibitedAirports
+            is-public-resource: true

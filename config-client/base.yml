@@ -1,0 +1,19 @@
+config:
+  feed:
+    priceRateLimit: 20
+    contentRateLimit: 20
+    reviewRateLimit: 10
+    acceptancePercentage: 98
+    executor:
+      threadSize: 200
+      name: feed
+    tspIds: 24
+    import:
+      - classpath:/StaticInfoFeed.yml
+      - classpath:/UserReviewInfoFeed.yml
+      - classpath:/ProhibitedAirportFeed.yml
+      - classpath:/VendorLogoInfoFeed.yml
+      - classpath:/HotelIdAncestorsInfoFeed.yml
+  import:
+    - classpath:/ContentProviderConnection.yml
+  exemptedPartners: Kayak,Trivago,TripAdvisor

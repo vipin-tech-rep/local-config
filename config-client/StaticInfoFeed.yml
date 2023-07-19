@@ -1,0 +1,862 @@
+staticInfoFeed:
+  hotelIdsPartitionSize: 200
+  localeSpecificBrandsConfig:
+    hotwire:
+      - locale: en-US
+        url: www.hotwire.com
+    hotels:
+      - locale: en-US
+        url: www.hotels.com
+      - locale: en-AU
+        suffix: -au
+        url: au.hotels.com
+      - locale: en-CA
+        suffix: -ca
+        url: ca.hotels.com
+      - locale: en-NZ
+        suffix: -nz
+        url: nz.hotels.com
+      - locale: en-GB
+        suffix: -uk
+        url: uk.hotels.com
+      - locale: en-ZA
+        suffix: -za
+        url: za.hotels.com
+      - locale: en-SG
+        suffix: -sg
+        url: sg.hotels.com
+      - locale: en-IN
+        suffix: -in
+        url: in.hotels.com
+      - locale: de-DE
+        url: de.hotels.com
+      - locale: es-ES
+        url: es.hotels.com
+      - locale: sv-SE
+        url: sv.hotels.com
+      - locale: no-NO
+        url: no.hotels.com
+      - locale: en-NO
+        url: no.hotels.com
+      - locale: da-DK
+        url: da.hotels.com
+      - locale: pt-BR
+        url: hoteis.com
+      - locale: es-MX
+        url: hoteles.com
+      - locale: fi-FI
+        url: fi.hotels.com
+      - locale: en-FI
+        url: fi.hotels.com
+      - locale: it-IT
+        url: it.hotels.com
+      - locale: fr-FR
+        url: fr.hotels.com
+      - locale: th-TH
+        url: th.hotels.com
+      - locale: ko-KR
+        url: kr.hotels.com
+      - locale: ja-JP
+        url: jp.hotels.com
+      - locale: zh-TW
+        url: tw.hotels.com
+      - locale: zh-HK
+        url: zh.hotels.com
+      - locale: pl-PL
+        url: pl.hotels.com
+      - locale: es-CO
+        url: co.hotels.com
+      - locale: id-ID
+        url: id.hotels.com
+      - locale: en-PH
+        url: ph.hotels.com
+      - locale: ar-AE
+        url: ar.hotels.com
+        deepLink:
+          base: http://[website]/PPCHotelDetails?pos=HCOM_ARABIC&amp;locale=ar_AE&amp;hotelid=[hotelId]&amp;cur=AED
+      - locale: tr-TR
+        url: tr.hotels.com
+        deepLink:
+          base: http://[website]/PPCHotelDetails?locale=tr_TR&amp;hotelid=[hotelId]&amp;cur=TRY
+      - locale: en-IE
+        url: www.hotels.com
+        deepLink:
+          base: http://[website]/PPCHotelDetails?pos=HCOM_EMEA&amp;locale=en_IE&amp;hotelid=[hotelId]&amp;cur=USD
+      - locale: en-HK
+        suffix: -hk
+        url: www.hotels.com
+        deepLink:
+          base: https://[website]/ho[hotelId]?pos=HCOM_ASIA&amp;locale=en_HK&amp;cur=HKD
+      - locale: en-MY
+        suffix: -my
+        url: www.hotels.com
+        deepLink:
+          base: https://[website]/ho[hotelId]?pos=HCOM_ASIA&amp;locale=en_MY&amp;cur=MYR
+      - locale: en-TH
+        suffix: -th
+        url: www.hotels.com
+        deepLink:
+          base: https://[website]/ho[hotelId]?pos=HCOM_ASIA&amp;locale=en_TH&amp;cur=THB
+      - locale: en-AS
+        suffix: -as
+        url: www.hotels.com
+        deepLink:
+          base: https://[website]/ho[hotelId]?pos=HCOM_ASIA&amp;locale=en_AS&amp;cur=USD
+    expedia:
+      - locale: en-US
+        url: www.expedia.com
+        iosUrl: expda://hotelSearch?latitude=[latitude]&amp;longitude=[longitude]
+        androidUrl: expda://hotelSearch?latitude=[latitude]&amp;longitude=[longitude]
+        deepLink:
+          dateFormat: MM/dd/yyyy
+      - locale: es-US
+        url: www.expedia.com
+        deepLink:
+          base: https://[website]/Hotel-Search
+          queryString: destination:[city]&selected:[hotelId]&startDate:[checkin]&endDate:[checkout]&langid:2058
+          secondaryBase: https://[website]/Hotel.h[hotelId].Hotel-Information?langid=2058
+          dateFormat: MM/dd/yyyy
+      - locale: en-AU
+        suffix: -au
+        url: www.expedia.com.au
+      - locale: en-CA
+        suffix: -ca
+        url: www.expedia.ca
+        deepLink:
+          base: https://[website]/Hotel-Search
+          queryString: destination:[city]&selected:[hotelId]&startDate:[checkin]&endDate:[checkout]&langid:4105
+          secondaryBase: https://[website]/Hotel.h[hotelId].Hotel-Information?langid=4105
+          dateFormat: dd/MM/yyyy
+      - locale: fr-CA
+        url: www.expedia.ca
+        deepLink:
+          base: https://[website]/Hotel-Search
+          queryString: destination:[city]&selected:[hotelId]&startDate:[checkin]&endDate:[checkout]&langid:3084
+          secondaryBase: https://[website]/Hotel.h[hotelId].Hotel-Information?langid=3084
+          dateFormat: dd/MM/yyyy
+      - locale: en-NZ
+        suffix: -nz
+        url: www.expedia.co.nz
+      - locale: en-GB
+        suffix: -uk
+        url: www.expedia.co.uk
+      - locale: de-DE
+        url: www.expedia.de
+      - locale: sv-SE
+        url: www.expedia.se
+        deepLink:
+          dateFormat: yyyy-MM-dd
+      - locale: nb-NO
+        url: www.expedia.no
+      - locale: fi-FI
+        url: www.expedia.fi
+      - locale: es-MX
+        url: www.expedia.mx
+      - locale: pt-BR
+        url: www.expedia.com.br
+      - locale: it-IT
+        url: www.expedia.it
+      - locale: fr-FR
+        url: www.expedia.fr
+      - locale: en-SG
+        url: www.expedia.com.sg
+      - locale: ko-KR
+        url: www.expedia.co.kr
+        deepLink:
+          dateFormat: yyyy-MM-dd
+      - locale: ja-JP
+        url: www.expedia.co.jp
+        deepLink:
+          dateFormat: yyyy-MM-dd
+      - locale: zh-TW
+        url: www.expedia.com.tw
+        deepLink:
+          dateFormat: yyyy-MM-dd
+      - locale: zh-HK
+        url: www.expedia.com.hk
+        deepLink:
+          dateFormat: yyyy-MM-dd
+      - locale: en-PH
+        suffix: -ph
+        url: www.expedia.com.ph
+        deepLink:
+          dateFormat: MM/dd/yyyy
+      - locale: en-MY
+        suffix: -my
+        url: www.expedia.com.my
+      - locale: en-ID
+        suffix: -id
+        url: www.expedia.co.id
+      - locale: en-IN
+        suffix: -in
+        url: www.expedia.co.in
+      - locale: th-TH
+        url: www.expedia.co.th
+      - locale: vi-VN
+        url: www.expedia.com.vn
+      - locale: da-DK
+        url: www.expedia.dk
+      - locale: nl-NL
+        url: www.expedia.nl
+      - locale: en-IE
+        url: www.expedia.ie
+      - locale: ar-SA
+      - locale: cs-CZ
+      - locale: el-GR
+      - locale: es-ES
+      - locale: et-EE
+      - locale: he-IL
+      - locale: hr-HR
+      - locale: hu-HU
+      - locale: id-ID
+      - locale: is-IS
+      - locale: lt-LT
+      - locale: lv-LV
+      - locale: ms-MY
+      - locale: pl-PL
+      - locale: pt-PT
+      - locale: ru-RU
+      - locale: sk-SK
+      - locale: tl-PH
+      - locale: tr-TR
+      - locale: uk-UA
+      - locale: zh-CN
+      - locale: de-CH
+      - locale: es-AR
+      - locale: es-XL
+      - locale: fr-BE
+      - locale: fr-CH
+      - locale: nl-BE
+    vrbo:
+      - locale: en-US
+        url: www.vrbo.com
+    abritel:
+      - locale: fr-FR
+        url: www.abritel.fr
+    bookabach:
+      - locale: en-NZ
+        url: www.bookabach.co.nz
+    stayz:
+      - locale: en-AU
+        url: www.vrbo.com
+    homeaway:
+      - locale: en-GB
+        suffix: _uk
+        url: www.vrbo.com
+        iosUrl: vrbo://pinnedserp/[listingTriad]
+        androidUrl: vrbo://pinnedserp/[listingTriad]
+        iosAppStoreId: 1245772818
+        iosAppName: Vrbo Vacation Rentals
+        androidPackage: "com.vrbo.android"
+        androidAppName: Vrbo Vacation Rentals
+        deepLink:
+          base: https://www.vrbo.com/en-gb/results?pinnedPropertyListing=[listingTriad]
+      - locale: de-DE
+        suffix: _de
+        url: www.fewo-direkt.de
+        iosAppStoreId: 642441300
+        iosAppName: HomeAway Holiday Rentals
+        androidPackage: "com.vacationrentals.homeaway"
+        androidAppName: HomeAway Holiday Rentals
+        iosUrl: homeaway://pinnedserp/[listingTriad]
+        androidUrl: homeaway://pinnedserp/[listingTriad]
+        deepLink:
+          base: https://www.fewo-direkt.de/results?pinnedPropertyListing=[listingTriad]
+      - locale: en-CA
+        suffix: _ca
+        url: www.vrbo.com
+        iosAppStoreId: 1245772818
+        iosAppName: Vrbo Vacation Rentals
+        androidPackage: "com.vrbo.android"
+        androidAppName: Vrbo Vacation Rentals
+        iosUrl: vrbo://pinnedserp/[listingTriad]
+        androidUrl: vrbo://pinnedserp/[listingTriad]
+        deepLink:
+          base: https://www.vrbo.com/en-ca/results?pinnedPropertyListing=[listingTriad]
+      - locale: fr-CA
+        suffix: _cafr
+        url: www.vrbo.com
+        iosAppStoreId: 1245772818
+        iosAppName: Vrbo Vacation Rentals
+        androidPackage: "com.vrbo.android"
+        androidAppName: Vrbo Vacation Rentals
+        iosUrl: vrbo://pinnedserp/[listingTriad]
+        androidUrl: vrbo://pinnedserp/[listingTriad]
+        deepLink:
+          base: https://www.vrbo.com/fr-ca/results?pinnedPropertyListing=[listingTriad]
+  filesGenerationConfig:
+    - partner: Bing
+      format: xml
+      freemarkerTemplate: BingXml.ftlx
+      hotelsPerFile: 80000
+      brandsConfig:
+        expedia:
+          fileName: hotels/feed1/expedia-local%s.xml.zip
+          key: DD0CFD5B-4CE6-474C-934C-C2ABC250D72B
+          deepLink:
+            base: https://[website]/Hotel.h[hotelId].Hotel-Information
+    - partner: Criteo
+      format: tsv
+      freemarkerTemplate: CriteoTsv.ftl
+      hotelsPerFile: 1000000000
+      brandsConfig:
+        hotwire:
+          fileName: hotels/criteo/hotwire-hotels%s.tsv.zip
+          key: DD0CFD5B-4CE6-474C-934C-C2ABC250D72B
+          deepLink:
+            base: https://[website]/hotels/search
+            queryString: destination:[city],[country]&startDate:[checkin]&endDate:[checkout]&selectedExpediaHotelId:[hotelId]
+            dateFormat: MM/dd/yy
+    - partner: Facebook
+      format: tsv
+      includeReviewSummary: true
+      includeDescriptions: true
+      freemarkerTemplate: FacebookTsv.ftl
+      availablePricingWindow: 14
+      lengthOfStay: 1
+      hotelsPerFile: 1000000000
+      warmUpConfig:
+        initialLimit: 2
+        stepMultiplier: 2
+        sleepIntervalInMs: 3000
+      brandsConfig:
+        expedia:
+          propertyCountAcceptancePercentage: 99.96
+          fileName: hotels/feed2/dat/expedia-local%s.tsv.zip
+          acceptancePercentage: 99
+          key: DD0CFD5B-4CE6-474C-934C-C2ABC250D72B
+          iosAppStoreId: 427916203
+          iosAppName: Expedia Hotels, Flights, Car Rentals & Activities
+          androidPackage: "com.expedia.bookings"
+          androidAppName: Expedia Hotels, Flights & Cars
+          iosUrl: expda://hotelSearch?hotelId=[hotelId]
+          androidUrl: expda://hotelSearch?hotelId=[hotelId]
+          includeLocationFeatures: true
+          includeAmenities: true
+          tspIds: 24,84,82,105
+          imageSource: cid
+          s3DataLogConfig:
+            - purpose: pricelog
+              templateName: FacebookHotelPriceLogger.ftl
+              s3DataLogFilePath: facebook_hotel_pricing
+              versionFrequency: daily
+          deepLink:
+            base: https://[website]/Hotel-Search
+            queryString: destination:[city]&selected:[hotelId]&startDate:[checkin]&endDate:[checkout]
+            secondaryBase: https://[website]/Hotel.h[hotelId].Hotel-Information
+            dateFormat: dd/MM/yyyy
+          customConfig:
+            - locale: en-US
+              suffix: ""
+              freemarkerTemplate: FacebookTsvWithDatedPrice.ftl
+              key: d4db3f84-806d-4507-81db-5c9952644add
+              includeDatedPrice: true
+            - locale: en-US
+              suffix: -en_us-omnipros
+              iosUrl: expda://home?olacid=US.MAPP.FACEBOOK.NONINCENT-DAT-PROSPECTING-INSTAFB-IOS-A070_A483_C000738.HOTEL
+              androidUrl: expda://home?olacid=US.MAPP.FACEBOOK.NONINCENT-DAT-PROSPECTING-INSTAFB-ANDROID-A070_A483_C000737.HOTEL
+            - locale: en-US
+              suffix: -omni1
+              iosUrl: expda://hotelSearch?latitude=[latitude]&amp;longitude=[longitude]&amp;olacid=US.MAPP.FACEBOOK.NONINCENT-DAT-HTLSRCHERS1-INSTAFB-IOS-A070_A483_C000011.HOTEL
+              androidUrl: expda://hotelSearch?latitude=[latitude]&amp;longitude=[longitude]&amp;olacid=US.MAPP.FACEBOOK.NONINCENT-DAT-HTLSRCHERS1-INSTAFB-ANDROID-A070_A483_C000010.HOTEL
+            - locale: en-US
+              suffix: -omni3
+              iosUrl: expda://hotelSearch?latitude=[latitude]&amp;longitude=[longitude]&amp;olacid=US.MAPP.FACEBOOK.NONINCENT-DAT-HTLSRCHERS3-INSTAFB-IOS-A070_A483_C000013.HOTEL
+              androidUrl: expda://hotelSearch?latitude=[latitude]&amp;longitude=[longitude]&amp;olacid=US.MAPP.FACEBOOK.NONINCENT-DAT-HTLSRCHERS3-INSTAFB-ANDROID-A070_A483_C000012.HOTEL
+            - locale: en-US
+              suffix: -omni7
+              iosUrl: expda://hotelSearch?latitude=[latitude]&amp;longitude=[longitude]&amp;olacid=US.MAPP.FACEBOOK.NONINCENT-DAT-HTLSRCHERS7-INSTAFB-IOS-A070_A483_C000015.HOTEL
+              androidUrl: expda://hotelSearch?latitude=[latitude]&amp;longitude=[longitude]&amp;olacid=US.MAPP.FACEBOOK.NONINCENT-DAT-HTLSRCHERS7-INSTAFB-ANDROID-A070_A483_C000014.HOTEL
+            - locale: es-MX
+              suffix: -es_mx-omni1
+              iosUrl: expda://hotelSearch?hotelId=[hotelId]&amp;olacid=MX.MAPP.FACEBOOK.NONINCENT-DAT-HTLSRCHERS1-INSTAFB-IOS-A070_A483_C000017.HOTEL
+              androidUrl: expda://hotelSearch?hotelId=[hotelId]&amp;olacid=MX.MAPP.FACEBOOK.NONINCENT-DAT-HTLSRCHERS1-INSTAFB-ANDROID-A070_A483_C000016.HOTEL
+            - locale: ja-JP
+              suffix: -ja_jp-omni1
+              iosUrl: expda://hotelSearch?hotelId=[hotelId]&amp;olacid=JP.MAPP.FACEBOOK.NONINCENT-DAT-HTLSRCHERS1-INSTAFB-IOS-A070_A483_C000029.HOTEL
+              androidUrl: expda://hotelSearch?hotelId=[hotelId]&amp;olacid=JP.MAPP.FACEBOOK.NONINCENT-DAT-HTLSRCHERS1-INSTAFB-ANDROID-A070_A483_C000028.HOTEL
+            - locale: ko-KR
+              suffix: -ko_kr-omni1
+              iosUrl: expda://hotelSearch?hotelId=[hotelId]&amp;olacid=KR.MAPP.FACEBOOK.NONINCENT-DAT-HTLSRCHERS1-INSTAFB-IOS-A070_A483_C000027.HOTEL
+              androidUrl: expda://hotelSearch?hotelId=[hotelId]&amp;olacid=KR.MAPP.FACEBOOK.NONINCENT-DAT-HTLSRCHERS1-INSTAFB-ANDROID-A070_A483_C000026.HOTEL
+            - locale: ko-KR
+              suffix: -ko_kr-omnipros
+              iosUrl: expda://home?olacid=KR.MAPP.FACEBOOK.NONINCENT-DAT-PROSPECTING-INSTAFB-IOS-A070_A483_C000752.HOTEL
+              androidUrl: expda://home?olacid=KR.MAPP.FACEBOOK.NONINCENT-DAT-PROSPECTING-INSTAFB-ANDROID-A070_A483_C000751.HOTEL
+            - locale: en-GB
+              suffix: -uk-omnipros
+              iosUrl: expda://home?olacid=UK.MAPP.FACEBOOK.NONINCENT-DAT-PROSPECTING-INSTAFB-IOS-A070_A483_C000742.HOTEL
+              androidUrl: expda://home?olacid=UK.MAPP.FACEBOOK.NONINCENT-DAT-PROSPECTING-INSTAFB-ANDROID-A070_A483_C000741.HOTEL
+            - locale: zh-HK
+              suffix: -zh_hk-omni1
+              iosUrl: expda://hotelSearch?hotelId=[hotelId]&amp;olacid=HK.MAPP.FACEBOOK.NONINCENT-DAT-HTLSRCHERS1-INSTAFB-IOS-A070_A483_C000031.HOTEL
+              androidUrl: expda://hotelSearch?hotelId=[hotelId]&amp;olacid=HK.MAPP.FACEBOOK.NONINCENT-DAT-HTLSRCHERS1-INSTAFB-ANDROID-A070_A483_C000030.HOTEL
+        hotels:
+          propertyCountAcceptancePercentage: 99.85
+          fileName: hotels/feed2/dat/hotels-local%s.tsv.zip
+          acceptancePercentage: 99
+          key: 94DBEAC2-9885-46AD-82EE-18308A40E5EB
+          iphoneAppStoreId: 284971959
+          iphoneAppName: Hotels.com Hotel booking and last minute hotel deals
+          ipadAppStoreId: 461327349
+          ipadAppName: Hotels.com Hotel booking and last minute hotel deals
+          androidPackage: "com.hcom.android"
+          androidAppName: Hotels.com - Hotel Reservation
+          iphoneUrl: hotelsapp://www.hotels.com/PPCHotelDetails?hotelId=[hotelId]
+          ipadUrl: hotelsapp://www.hotels.com/PPCHotelDetails?hotelId=[hotelId]
+          androidUrl: hotelsapp://www.hotels.com/PPCHotelDetails?hotelid=[hotelId]
+          includeLocationFeatures: true
+          includeAmenities: true
+          imageSource: cid
+          overrideHcomIdToEcomId: true
+          deepLink:
+            base: https://[website]/ho[hotelId]
+        vrbo:
+          propertyCountAcceptancePercentage: 87.00
+          freemarkerTemplate: FacebookVrboTsv.ftl
+          fileName: vrbo/facebook/feed/vrbo.tsv.zip
+          iosAppStoreId: 1245772818
+          iosAppName: Vrbo Vacation Rentals
+          androidPackage: "com.vrbo.android"
+          androidAppName: Vrbo Vacation Rentals
+          iosUrl: vrbo://pinnedserp/[listingTriad]
+          androidUrl: vrbo://pinnedserp/[listingTriad]
+          includePolicies: true
+          includeLocationFeatures: true
+          includeAmenities: true
+          tspIds: 83,103
+          s3DataLogConfig:
+            - purpose: errorlog
+              templateName: CommonDataLogger.ftl
+              s3DataLogFilePath: vrbo_logs
+          acceptancePercentage: 99
+          includeSpaces: true
+          imageSource: cid
+          maxImages: 5
+          deepLink:
+            base: https://www.vrbo.com/results?pinnedPropertyListing=[listingTriad]
+        abritel:
+          propertyCountAcceptancePercentage: 87.00
+          freemarkerTemplate: FacebookVrboTsv.ftl
+          fileName: vrbo/facebook/feed/abritel.tsv.zip
+          iosAppStoreId: 642441300
+          iosAppName: HomeAway Holiday Rentals
+          androidPackage: "com.vacationrentals.homeaway"
+          androidAppName: HomeAway Holiday Rentals
+          iosUrl: homeaway://pinnedserp/[listingTriad]
+          androidUrl: homeaway://pinnedserp/[listingTriad]
+          includePolicies: true
+          includeLocationFeatures: true
+          includeAmenities: true
+          tspIds: 83,103
+          s3DataLogConfig:
+            - purpose: errorlog
+              templateName: CommonDataLogger.ftl
+              s3DataLogFilePath: vrbo_logs
+          acceptancePercentage: 99
+          includeSpaces: true
+          imageSource: cid
+          maxImages: 5
+          deepLink:
+            base: https://www.abritel.fr/results?pinnedPropertyListing=[listingTriad]
+        bookabach:
+          propertyCountAcceptancePercentage: 87.00
+          freemarkerTemplate: FacebookVrboTsv.ftl
+          fileName: vrbo/facebook/feed/bookabach.tsv.zip
+          iosAppStoreId: 1245772818
+          iosAppName: HomeAway Holiday Rentals
+          androidPackage: "com.vacationrentals.homeaway"
+          androidAppName: HomeAway Holiday Rentals
+          iosUrl: homeaway://pinnedserp/[listingTriad]
+          androidUrl: homeaway://pinnedserp/[listingTriad]
+          includePolicies: true
+          includeLocationFeatures: true
+          includeAmenities: true
+          tspIds: 83,103
+          s3DataLogConfig:
+            - purpose: errorlog
+              templateName: CommonDataLogger.ftl
+              s3DataLogFilePath: vrbo_logs
+          acceptancePercentage: 99
+          includeSpaces: true
+          imageSource: cid
+          maxImages: 5
+          deepLink:
+            base: https://www.bookabach.co.nz/results?pinnedPropertyListing=[listingTriad]
+        stayz:
+          propertyCountAcceptancePercentage: 87.00
+          freemarkerTemplate: FacebookVrboTsv.ftl
+          fileName: vrbo/facebook/feed/stayz.tsv.zip
+          iosAppStoreId: 1245772818
+          iosAppName: HomeAway Holiday Rentals
+          androidPackage: "com.vacationrentals.homeaway"
+          androidAppName: HomeAway Holiday Rentals
+          iosUrl: homeaway://pinnedserp/[listingTriad]
+          androidUrl: homeaway://pinnedserp/[listingTriad]
+          includePolicies: true
+          includeLocationFeatures: true
+          includeAmenities: true
+          tspIds: 83,103
+          s3DataLogConfig:
+            - purpose: errorlog
+              templateName: CommonDataLogger.ftl
+              s3DataLogFilePath: vrbo_logs
+          acceptancePercentage: 99
+          includeSpaces: true
+          imageSource: cid
+          maxImages: 5
+          deepLink:
+            base: https://www.stayz.com.au/results?pinnedPropertyListing=[listingTriad]
+        homeaway:
+          propertyCountAcceptancePercentage: 87.00
+          freemarkerTemplate: FacebookVrboTsv.ftl
+          fileName: vrbo/facebook/feed/homeaway%s.tsv.zip
+          tspIds: 83,103
+          s3DataLogConfig:
+            - purpose: errorlog
+              templateName: CommonDataLogger.ftl
+              s3DataLogFilePath: vrbo_logs
+          acceptancePercentage: 99
+          includeLocationFeatures: true
+          includeAmenities: true
+          includeSpaces: true
+          includePolicies: true
+          imageSource: cid
+          maxImages: 5
+          customConfig:
+            - locale: en-GB
+              suffix: _uk
+              iosUrl: vrbo://pinnedserp/[listingTriad]
+              androidUrl: vrbo://pinnedserp/[listingTriad]
+            - locale: de-DE
+              suffix: _de
+              iosUrl: homeaway://pinnedserp/[listingTriad]
+              androidUrl: homeaway://pinnedserp/[listingTriad]
+            - locale: en-CA
+              suffix: _ca
+              iosUrl: vrbo://pinnedserp/[listingTriad]
+              androidUrl: vrbo://pinnedserp/[listingTriad]
+            - locale: fr-CA
+              suffix: _cafr
+              iosUrl: vrbo://pinnedserp/[listingTriad]
+              androidUrl: vrbo://pinnedserp/[listingTriad]
+    - partner: Snapchat
+      format: tsv
+      includeReviewSummary: true
+      includeDescriptions: true
+      freemarkerTemplate: SnapchatTsv.ftl
+      hotelsPerFile: 1000000000
+      maxMedias: 20
+      brandsConfig:
+        expedia:
+          fileName: hotels/snapchat/expedia-local%s.tsv.gz
+          acceptancePercentage: 95
+          key: DD0CFD5B-4CE6-474C-934C-C2ABC250D72B
+          iosAppStoreId: 427916203
+          iosAppName: Expedia Hotels, Flights, Car Rentals & Activities
+          androidPackage: "com.expedia.bookings"
+          androidAppName: Expedia Hotels, Flights & Cars
+          iosUrl: expda://hotelSearch?hotelId=[hotelId]
+          androidUrl: expda://hotelSearch?hotelId=[hotelId]
+          iconMediaUrl: https://a.travel-assets.com/travel-assets-manager/snapchat-acccount-set-up/expedia-app-logo.png
+          deepLink:
+            base: https://[website]/Hotel-Search
+            queryString: destination:[city]&selected:[hotelId]&startDate:[checkin]&endDate:[checkout]
+            secondaryBase: https://[website]/Hotel.h[hotelId].Hotel-Information
+        orbitz:
+          fileName: hotels/snapchat/orbitz-local%s.tsv.gz
+          acceptancePercentage: 95
+          key: DD0CFD5B-4CE6-474C-934C-C2ABC250D72B
+          iosAppStoreId: 403546234
+          iosAppName: Orbitz Flights, Hotels, Cars, Packages, & Activities
+          androidPackage: "com.orbitz.bookings"
+          androidAppName: Orbitz Hotels, Flights & Cars
+          iosUrl: obtz://hotelSearch?hotelId=[hotelId]
+          androidUrl: obtz://hotelSearch?hotelId=[hotelId]
+          iconMediaUrl: https://a.travel-assets.com/travel-assets-manager/snapchat-acccount-set-up/expedia-app-logo.png
+          deepLink:
+            base: https://[website]/Hotel.h[hotelId].Hotel-Information
+    - partner: Google
+      format: xml
+      freemarkerTemplate: GoogleXml.ftlx
+      hotelsPerFile: 80000
+      types:
+        - name: hob
+          freemarkerTemplate: GoogleXml.ftlx
+          fileName: hotels/hotels-local%s.xml.zip
+      brandsConfig:
+        expedia:
+          fileName: hotels/expedia-local%s.xml.zip
+          acceptancePercentage: 99
+          key: DD0CFD5B-4CE6-474C-934C-C2ABC250D72B
+          imageAuthor: Expedia.com
+          deepLink:
+            base: https://[website]/Hotel.h[hotelId].Hotel-Information
+        hotels:
+          fileName: hotels/hotels-local%s.xml.zip
+          acceptancePercentage: 99
+          key: 94DBEAC2-9885-46AD-82EE-18308A40E5EB
+          imageAuthor: Hotels.com
+          deepLink:
+            base: https://[website]/ho[hotelId]/
+            queryString: mdpcid:HCOM.META.HPA.IMAGES-LOCALUNIVERSAL.HOTEL
+    - partner: Common
+      format: tsv
+      hotelsPerFile: 1000000
+      brandsConfig:
+        expedia:
+          fileName: hotels/common/regions/expedia%s.tsv.zip
+          acceptancePercentage: 94
+      types:
+        - name: allregions
+          hotelIdsPartitionSize: 10000
+          freemarkerTemplate: CommonRegionsTsv.ftl
+          fileName: hotels/common/regions/expedia-geography%s.tsv.zip
+          fileMetadata:
+            type: ALL_REGIONS
+            file-content-type: AllRegions
+            is-public-resource: true
+        - name: boundingpolygon
+          hotelIdsPartitionSize: 2000
+          freemarkerTemplate: CommonBoundingPolygonTsv.ftl
+          filename: hotels/common/regions/expedia-boundingpolygon.tsv.zip
+          fileMetadata:
+            type: BOUNDING_POLYGON
+            file-content-type: BoundingPolygon
+            is-public-resource: true
+    - partner: Common
+      format: jsonl
+      hotelsPerFile: 1000000
+      tspIds: 24,83,103
+      includeBookableOnly: true
+      brandsConfig:
+        all:
+          fileName: hotels/common/expedia-lodging%s-all.jsonl.zip
+          acceptancePercentage: 94
+          key: DD0CFD5B-4CE6-474C-934C-C2ABC250D72B
+          imageSource: cid
+      types:
+        -
+          name: master
+          hashFileName: hotels/common/master/meta/hash_%s.csv
+          fileName: hotels/common/master/expedia-lodging%s-all.jsonl.zip
+          freemarkerTemplate: CommonMasterJsonl.ftl
+          maxImages: 30
+          supplementVrboDatelessPrice: true
+        -
+          name : summary
+          locale: en-US
+          sourceFileName: hotels/common/master/expedia-lodging%s-all.jsonl.zip
+          fileName: hotels/common/summary/expedia-lodging%s-all.jsonl.zip
+          includeReviewSummary: true
+          includeReviewSummaryForAllBrands: true
+          freemarkerTemplate: CommonSummaryJsonl.ftl
+          localizeAllContents: true
+          supplementVrboDatelessPrice: true
+          referencePriceCoverageRate: 75
+          filter:
+            filterSourceDirectory: hotels/common/summary/source/expedia-lodging%s
+            sourceFileName: hotels/common/summary/expedia-lodging%s-all.jsonl.zip
+            fileName: hotels/common/summary/filtered/expedia-lodging%s.jsonl.zip
+          fileMetadata:
+            type: SUMMARY
+            file-content-type: Summary
+            has-full-file: true
+            is-public-resource: true
+        -
+          name: fullsummary
+          sourceFileName: hotels/common/master/expedia-lodging%s-all.jsonl.zip
+          fileName: hotels/common/summary/full/expedia-lodging%s-all.jsonl.zip
+          includeReviewSummary: true
+          includeReviewSummaryForAllBrands: true
+          freemarkerTemplate: CommonSummaryJsonl.ftl
+          localizeAllContents: true
+          supplementVrboDatelessPrice: true
+          mandatoryDisplayAddress: true
+          referencePriceCoverageRate: 75
+          filter:
+            sourceFileName: hotels/common/summary/full/expedia-lodging%s-all.jsonl.zip
+            fileName: hotels/common/summary/full/filtered/expedia-lodging%s.jsonl.zip
+          fileMetadata:
+            type: SUMMARY
+            file-content-type: Summary
+            full-file: true
+            is-public-resource: false
+        -
+          name : listings
+          locale: en-US
+          sourceFileName: hotels/common/master/expedia-lodging%s-all.jsonl.zip
+          fileName: hotels/common/listings/expedia-lodging%s-all.jsonl.zip
+          includeChainAndBrand: true
+          freemarkerTemplate: CommonListingsJsonl.ftl
+          fallbackFileToDefaultLocale: false
+          supplementVrboDatelessPrice: true
+          referencePriceCoverageRate: 75
+          filter:
+            filterSourceDirectory: hotels/common/listings/source/expedia-lodging%s
+            sourceFileName: hotels/common/listings/expedia-lodging%s-all.jsonl.zip
+            fileName: hotels/common/listings/filtered/expedia-lodging%s.jsonl.zip
+          fileMetadata:
+            type: LISTINGS
+            file-content-type: Listings
+            is-public-resource: true
+        -
+          name: locations
+          locale: en-US
+          sourceFileName: hotels/common/master/expedia-lodging%s-all.jsonl.zip
+          fileName: hotels/common/locations/expedia-lodging%s-all.jsonl.zip
+          includeLocationFeatures: true
+          freemarkerTemplate: CommonLocationsJsonl.ftl
+          localizeAllContents: true
+          filter:
+            filterSourceDirectory: hotels/common/locations/source/expedia-lodging%s
+            sourceFileName: hotels/common/locations/expedia-lodging%s-all.jsonl.zip
+            fileName: hotels/common/locations/filtered/expedia-lodging%s.jsonl.zip
+          fileMetadata:
+            type: LOCATIONS
+            file-content-type: Locations
+            has-full-file: true
+            is-public-resource: true
+        -
+          name: fulllocations
+          sourceFileName: hotels/common/master/expedia-lodging%s-all.jsonl.zip
+          fileName: hotels/common/locations/full/expedia-lodging%s-all.jsonl.zip
+          includeLocationFeatures: true
+          freemarkerTemplate: CommonLocationsJsonl.ftl
+          localizeAllContents: true
+          mandatoryDisplayAddress: true
+          mandatoryDisplayPhoneInfo: true
+          filter:
+            sourceFileName: hotels/common/locations/full/expedia-lodging%s-all.jsonl.zip
+            fileName: hotels/common/locations/full/filtered/expedia-lodging%s.jsonl.zip
+          fileMetadata:
+            type: LOCATIONS
+            file-content-type: Locations
+            full-file: true
+            is-public-resource: false
+        -
+          name : descriptions
+          locale: en-US
+          sourceFileName: hotels/common/master/expedia-lodging%s-all.jsonl.zip
+          fileName: hotels/common/descriptions/expedia-lodging%s-all.jsonl.zip
+          includeDescriptions: true
+          freemarkerTemplate: CommonDescriptionsJsonl.ftl
+          disableContentFallbackToDefaultLocale: true
+          filter:
+            filterSourceDirectory: hotels/common/descriptions/source/expedia-lodging%s
+            sourceFileName: hotels/common/descriptions/expedia-lodging%s-all.jsonl.zip
+            fileName: hotels/common/descriptions/filtered/expedia-lodging%s.jsonl.zip
+          fileMetadata:
+            type: DESCRIPTIONS
+            file-content-type: Descriptions
+            is-public-resource: true
+        -
+          name : amenities
+          locale: en-US
+          sourceFileName: hotels/common/master/expedia-lodging%s-all.jsonl.zip
+          fileName: hotels/common/amenities/expedia-lodging%s-all.jsonl.zip
+          includeAmenities: true
+          freemarkerTemplate: CommonAmenitiesJsonl.ftl
+          disableContentFallbackToDefaultLocale: true
+          filter:
+            filterSourceDirectory: hotels/common/amenities/source/expedia-lodging%s
+            sourceFileName: hotels/common/amenities/expedia-lodging%s-all.jsonl.zip
+            fileName: hotels/common/amenities/filtered/expedia-lodging%s.jsonl.zip
+          fileMetadata:
+            type: AMENITIES
+            file-content-type: Amenities
+            is-public-resource: true
+        -
+          name : images
+          locale: en-US
+          sourceFileName: hotels/common/master/expedia-lodging%s-all.jsonl.zip
+          fileName: hotels/common/images/expedia-lodging%s-all.jsonl.zip
+          includeCategoryImages: true
+          maxImages: 30
+          freemarkerTemplate: CommonImagesJsonl.ftl
+          disableContentFallbackToDefaultLocale: true
+          filter:
+            filterSourceDirectory: hotels/common/images/source/expedia-lodging%s
+            sourceFileName: hotels/common/images/expedia-lodging%s-all.jsonl.zip
+            fileName: hotels/common/images/filtered/expedia-lodging%s.jsonl.zip
+          fileMetadata:
+            type: IMAGES
+            file-content-type: Images
+            is-public-resource: true
+        -
+          name : policies
+          locale: en-US
+          sourceFileName: hotels/common/master/expedia-lodging%s-all.jsonl.zip
+          fileName: hotels/common/policies/expedia-lodging%s-all.jsonl.zip
+          includePolicies: true
+          includeRoomContents: true
+          freemarkerTemplate: CommonPoliciesJsonl.ftl
+          disableContentFallbackToDefaultLocale: true
+          filter:
+            filterSourceDirectory: hotels/common/policies/source/expedia-lodging%s
+            sourceFileName: hotels/common/policies/expedia-lodging%s-all.jsonl.zip
+            fileName: hotels/common/policies/filtered/expedia-lodging%s.jsonl.zip
+          fileMetadata:
+            type: POLICIES
+            file-content-type: Policies
+            is-public-resource: true
+        -
+          name: vacationrental
+          locale: en-US
+          sourceFileName: hotels/common/master/expedia-lodging%s-all.jsonl.zip
+          fileName: hotels/common/vacationrental/expedia-lodging%s-all.jsonl.zip
+          includePolicies: true
+          includeSpaces: true
+          includeHostInfo: true
+          freemarkerTemplate: CommonVacationRentalJsonl.ftlx
+          localizeAllContents: true
+          filter:
+            filterSourceDirectory: hotels/common/vacationrental/source/expedia-lodging%s
+            sourceFileName: hotels/common/vacationrental/expedia-lodging%s-all.jsonl.zip
+            fileName: hotels/common/vacationrental/filtered/expedia-lodging%s.jsonl.zip
+          fileMetadata:
+            type: VACATION_RENTAL
+            file-content-type: VacationRental
+            is-public-resource: true
+    - partner: EWSHotel
+      format: csv
+      freemarkerTemplate: VrboExpediaMappingInfoCSV.ftl
+      hotelsPerFile: 10000000
+      brandsConfig:
+        vrbo:
+          fileName: vrbo/ews-hotel-egdp-ecomid-vrbo-mapping.csv.zip
+          filter:
+            sourceFileName: vrbo/vrbo-egdp-control-file.csv.zip
+            fileName: vrbo/ews-hotel-egdp-ecomid-vrbo-mapping.csv.zip
+            template: VrboExpediaMappingInfoCSV.ftl
+    - partner: Pinterest
+      format: tsv
+      includeReviewSummary: true
+      hotelsPerFile: 1000000000
+      warmUpConfig:
+        initialLimit: 2
+        stepMultiplier: 2
+        sleepIntervalInMs: 3000
+      brandsConfig:
+        vrbo:
+          freemarkerTemplate: PinterestVrboTsv.ftl
+          fileName: vrbo/pinterest/feed/vrbo.tsv.zip
+          iosAppStoreId: 1245772818
+          iosAppName: Vrbo Vacation Rentals
+          androidPackage: "com.vrbo.android"
+          androidAppName: Vrbo Vacation Rentals
+          iosUrl: vrbo://pinnedserp/[listingTriad]
+          androidUrl: vrbo://pinnedserp/[listingTriad]
+          includeLocationFeatures: true
+          includeAmenities: true
+          tspIds: 83,103
+          s3DataLogConfig:
+            - purpose: errorlog
+              templateName: CommonDataLogger.ftl
+              s3DataLogFilePath: vrbo_logs
+          acceptancePercentage: 99
+          includeSpaces: true
+          imageSource: cid
+          maxImages: 5
+          deepLink:
+            base: https://www.vrbo.com/results?pinnedPropertyListing=[listingTriad]
