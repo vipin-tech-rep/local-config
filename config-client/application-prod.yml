@@ -1,0 +1,2 @@
+# Profile-specific properties for config-client in 'prod' environment
+config-client.profile-property: prod-value
